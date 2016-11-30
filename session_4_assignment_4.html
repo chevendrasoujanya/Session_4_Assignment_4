@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session 4 | Assignment 4</title>
+	<style type="text/css">
+		body {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;			
+		}
+
+		div.gradient-block {
+			width: 150px;
+			height: 250px;
+			border: 1px solid #ff00ff;
+			display: table;
+			margin: 5px;
+			text-align: center;
+		}
+
+		div.gradient-block p {
+			display: table-cell;
+			vertical-align: middle; 
+		}
+
+		div#linear-gradient-block {
+			background-color: red;
+			background: linear-gradient(to right, green, red);
+			background: -webkit-linear-gradient(to right, green, red);
+			background: -moz-linear-gradient(to right, green, red);
+			background: -o-linear-gradient(to right, green, red);
+		}
+
+		div#radial-gradient-circle-block {
+			background-color: yellow;
+			background: radial-gradient(circle, red, yellow, green);
+			background: -webkit-radial-gradient(circle, red, yellow, green);
+			background: -moz-radial-gradient(circle, red, yellow, green);
+			background: -o-radial-gradient(circle, red, yellow, green);
+		}
+
+		div#radial-gradient-ellipse-block {
+			height: 250px;
+			background-color: green;
+			background: radial-gradient(red, yellow, green);
+			background: -webkit-radial-gradient(red, yellow, green);
+			background: -moz-radial-gradient(red, yellow, green);
+			background: -o-radial-gradient(red, yellow, green);
+		}
+	</style>
+</head>
+<body>
+	<table class="blocks-table">
+		<tr>
+			<td>
+				<div class="gradient-block" id="linear-gradient-block">
+					<p>Box</p>
+				</div>		
+			</td>
+
+			<td>
+				<div class="gradient-block" id="radial-gradient-circle-block">
+					<p>Box</p>
+				</div>		
+			</td>
+
+			<td>
+				<div class="gradient-block" id="radial-gradient-ellipse-block">
+					<p>Box</p>
+				</div>	
+			</td>
+		</tr>
+				
+	</table>	
+</body>	
+</html>
